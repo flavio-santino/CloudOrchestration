@@ -1,0 +1,25 @@
+{
+   "serviceName": "DBFL001",
+   "version": "12.1.0.2",
+   "level": "PAAS",
+   "edition": "EE",
+   "subscriptionType": "MONTHLY",
+   "description": "DBCS Created via RESTful API",
+   "shape": "oc3",
+   "vmPublicKeyText": "<copy-your-public-ssh-key-here>",
+   "parameters": [
+    {
+       "type": "db",
+       "adminPassword": "<DB-system-password>",
+       "backupDestination" : "BOTH",
+       "cloudStorageContainer" : "Storage-<your-identity-domain>/DB-BACKUP01",
+       "cloudStorageUser" : "<your-cloud-username>",
+       "cloudStoragePwd" : "<your-password>",
+       "pdbName" : "pdb1",
+       "sid" : "ORCL",
+       "timezone" : "US/Central",
+       "usableStorage" : "25",
+       "charset" : "AL32UTF8"
+    } 
+  ]
+}
